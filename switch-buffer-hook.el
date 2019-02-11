@@ -59,6 +59,7 @@ The hook prototype is HOOK-FUNC(CURRENT-BUFFER PREVIOUS-BUFFER).")
       (set-frame-parameter nil 'switch-buffer-hook--last-buffer cur)
       (run-hook-with-args 'switch-buffer-hook cur prev))))
 
+;;;###autoload
 (define-minor-mode switch-buffer-hook-mode
   "Toggle switch buffer hook.
 With a prefix argument ARG, enable switch-buffer-hook if ARG is
